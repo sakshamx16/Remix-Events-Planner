@@ -3,6 +3,20 @@
  * Edit phone numbers, WhatsApp settings, Instagram links, and gallery images here.
  */
 
+import heroLuxuryIndianWeddingImg from '../assets/images/hero_luxury_indian_wedding_1791488813479.jpg';
+import galleryFloralEntranceImg from '../assets/images/gallery_floral_entrance_1791488829471.jpg';
+import galleryMehndiHaldiDecorImg from '../assets/images/gallery_mehndi_haldi_decor_1791488866434.jpg';
+import galleryTableCateringImg from '../assets/images/gallery_table_catering_1791488854005.jpg';
+import galleryReceptionVenueImg from '../assets/images/gallery_reception_venue_1791488877616.jpg';
+
+export const IMAGE_ASSETS = {
+  heroMandap: heroLuxuryIndianWeddingImg,
+  floralEntrance: galleryFloralEntranceImg,
+  mehndiHaldi: galleryMehndiHaldiDecorImg,
+  tableCatering: galleryTableCateringImg,
+  receptionVenue: galleryReceptionVenueImg,
+};
+
 export interface ServiceItem {
   id: string;
   index: string;
@@ -41,15 +55,15 @@ export const SITE_CONFIG = {
     // Replace with the 10-digit WhatsApp number with country code (e.g., '91XXXXXXXXXX')
     whatsappNumber: '',
     // Display phone placeholder shown in the Contact section
-    phoneDisplay: '[Phone Number — Update in siteConfig.ts]',
+    phoneDisplay: 'XXXXXXXXXX',
     phoneHref: '#contact',
     // Replace with the official Instagram profile URL
     instagramUrl: '#contact',
-    instagramHandle: '[Instagram Profile — Update in siteConfig.ts]',
+    instagramHandle: '@remixeventsplanner',
   },
   whatsappDefaultMessage:
     "Hi Remix Events Planner, I'm interested in planning an event. I'd like to know more about your services.",
-  heroImage: '/src/assets/images/hero_luxury_indian_wedding_1791488813479.jpg',
+  heroImage: IMAGE_ASSETS.heroMandap,
 };
 
 export function getWhatsAppUrl(customMessage?: string): string {
@@ -70,7 +84,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     description:
       'Complete planning and coordination for memorable weddings.',
     highlights: ['Wedding Planning', 'Wedding Planning & Coordination'],
-    image: '/src/assets/images/hero_luxury_indian_wedding_1791488813479.jpg',
+    image: IMAGE_ASSETS.heroMandap,
     iconName: 'rings',
   },
   {
@@ -81,7 +95,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     description:
       'Thoughtful planning and execution for private and social events.',
     highlights: ['Private Events', 'Social Celebrations'],
-    image: '/src/assets/images/gallery_reception_venue_1791488877616.jpg',
+    image: IMAGE_ASSETS.receptionVenue,
     iconName: 'calendar',
   },
   {
@@ -92,7 +106,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     description:
       "Customised concepts, themes and décor designed around the couple's vision.",
     highlights: ['Custom Concepts', 'Themes & Décor'],
-    image: '/src/assets/images/gallery_mehndi_haldi_decor_1791488866434.jpg',
+    image: IMAGE_ASSETS.mehndiHaldi,
     iconName: 'palette',
   },
   {
@@ -103,7 +117,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     description:
       'Elegant floral arrangements, entrance décor, stage design, seating and venue styling.',
     highlights: ['Floral Arrangements', 'Entrance & Stage Design', 'Venue Styling'],
-    image: '/src/assets/images/gallery_floral_entrance_1791488829471.jpg',
+    image: IMAGE_ASSETS.floralEntrance,
     iconName: 'floral',
   },
   {
@@ -114,7 +128,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     description:
       'Beautifully presented food and catering arrangements for celebrations.',
     highlights: ['Food Presentation', 'Catering Arrangements'],
-    image: '/src/assets/images/gallery_table_catering_1791488854005.jpg',
+    image: IMAGE_ASSETS.tableCatering,
     iconName: 'catering',
   },
   {
@@ -125,7 +139,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     description:
       'Entertainment planning to keep guests engaged and the celebration memorable.',
     highlights: ['Guest Engagement', 'Entertainment Planning'],
-    image: '/src/assets/images/gallery_reception_venue_1791488877616.jpg',
+    image: IMAGE_ASSETS.receptionVenue,
     iconName: 'music',
   },
 ];
@@ -138,7 +152,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Patna, Bihar',
     description:
       'Bespoke stage design, floral arrangements, and ambient lighting for wedding ceremonies.',
-    image: '/src/assets/images/hero_luxury_indian_wedding_1791488813479.jpg',
+    image: IMAGE_ASSETS.heroMandap,
     aspectClass: 'aspect-[16/10]',
     gridSpanClass: 'md:col-span-7',
   },
@@ -149,7 +163,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Patna, Bihar',
     description:
       'Elegant floral entrance archway and walkway styling to welcome guests.',
-    image: '/src/assets/images/gallery_floral_entrance_1791488829471.jpg',
+    image: IMAGE_ASSETS.floralEntrance,
     aspectClass: 'aspect-[3/4]',
     gridSpanClass: 'md:col-span-5',
   },
@@ -160,7 +174,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Patna, Bihar',
     description:
       'Customised floral installations and seating arrangements for daytime Mehndi and Haldi celebrations.',
-    image: '/src/assets/images/gallery_mehndi_haldi_decor_1791488866434.jpg',
+    image: IMAGE_ASSETS.mehndiHaldi,
     aspectClass: 'aspect-[3/4]',
     gridSpanClass: 'md:col-span-5',
   },
@@ -171,7 +185,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Patna, Bihar',
     description:
       'Beautifully presented dining arrangements and floral table styling for wedding celebrations.',
-    image: '/src/assets/images/gallery_table_catering_1791488854005.jpg',
+    image: IMAGE_ASSETS.tableCatering,
     aspectClass: 'aspect-[4/3]',
     gridSpanClass: 'md:col-span-7',
   },
@@ -182,7 +196,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Patna, Bihar',
     description:
       'Outdoor wedding décor, suspended floral installations, seating, and entertainment setup.',
-    image: '/src/assets/images/gallery_reception_venue_1791488877616.jpg',
+    image: IMAGE_ASSETS.receptionVenue,
     aspectClass: 'aspect-[16/9]',
     gridSpanClass: 'md:col-span-12',
   },

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MessageCircle, ArrowUpRight } from 'lucide-react';
-import { getWhatsAppUrl } from '../config/siteConfig';
+import { getWhatsAppUrl, IMAGE_ASSETS } from '../config/siteConfig';
 import { ResilientImage } from './ResilientImage';
 
 export const CallToAction: React.FC = () => {
@@ -9,7 +9,7 @@ export const CallToAction: React.FC = () => {
       {/* Subtle Background Image with Heavy Dark Charcoal Scrim */}
       <div className="absolute inset-0 z-0 opacity-25">
         <ResilientImage
-          src="/src/assets/images/gallery_reception_venue_1791488877616.jpg"
+          src={IMAGE_ASSETS.receptionVenue}
           alt="Evening wedding reception backdrop"
           containerClassName="w-full h-full"
           className="w-full h-full object-cover object-center"

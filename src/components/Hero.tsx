@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[92vh] lg:min-h-screen w-full flex items-end lg:items-center bg-[#121110] overflow-hidden pt-24 pb-16 lg:py-28"
+      className="relative min-h-[85vh] md:min-h-[88vh] lg:min-h-screen w-full flex items-center bg-[#121110] overflow-hidden pt-28 sm:pt-32 md:pt-36 lg:pt-32 pb-16 sm:pb-20 lg:pb-28"
     >
       {/* Full-Bleed Architectural Wedding Photography */}
       <div className="absolute inset-0 z-0">
@@ -27,16 +27,16 @@ export const Hero: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 w-full">
         <div className="max-w-3xl">
           {/* Small Trust / Location Line — Unboxed editorial text */}
-          <div className="flex items-center gap-3 mb-5">
-            <span className="w-8 h-[1px] bg-[#C9A66B]" aria-hidden="true" />
-            <p className="text-xs sm:text-sm font-medium tracking-[0.18em] text-[#E6D2B5] uppercase">
+          <div className="flex items-center gap-3 mb-4 sm:mb-5">
+            <span className="w-8 h-[1px] bg-[#C9A66B] shrink-0" aria-hidden="true" />
+            <p className="text-xs sm:text-sm font-medium tracking-[0.16em] sm:tracking-[0.18em] text-[#E6D2B5] uppercase">
               Wedding &amp; Event Planners • Patna, Bihar
             </p>
           </div>
 
           {/* Primary Headline */}
           <h1
-            className="font-serif-display text-4xl sm:text-6xl lg:text-[4.25rem] font-normal text-[#FAF8F5] leading-[1.08] tracking-[-0.01em] mb-6"
+            className="font-serif-display text-4xl sm:text-5xl md:text-6xl lg:text-[4.25rem] font-normal text-[#FAF8F5] leading-[1.1] tracking-[-0.01em] mb-6"
             style={{ textWrap: 'balance' }}
           >
             Creating Celebrations You&apos;ll Remember Forever

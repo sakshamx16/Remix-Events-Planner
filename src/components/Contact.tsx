@@ -122,7 +122,7 @@ export const Contact: React.FC<ContactProps> = ({ preselectedEventType }) => {
 
               <div className="pt-5 border-t border-[#141312]/10">
                 <p className="text-xs font-medium tracking-[0.14em] uppercase text-[#9E7B3B] mb-2">
-                  Phone / Contact (Editable Placeholder)
+                  Phone / Contact
                 </p>
                 {SITE_CONFIG.contact.phoneHref !== '#contact' ? (
                   <a
@@ -133,15 +133,11 @@ export const Contact: React.FC<ContactProps> = ({ preselectedEventType }) => {
                     <span>{SITE_CONFIG.contact.phoneDisplay}</span>
                   </a>
                 ) : (
-                  <div className="inline-flex items-center gap-2.5 text-sm sm:text-base font-medium text-[#141312] bg-[#FAF8F5] px-3.5 py-2 border border-dashed border-[#9E7B3B]/60 rounded-sm">
+                  <div className="inline-flex items-center gap-2.5 text-base sm:text-lg font-medium text-[#141312] tabular-nums">
                     <Phone className="w-4 h-4 text-[#9E7B3B] shrink-0" />
                     <span>{SITE_CONFIG.contact.phoneDisplay}</span>
                   </div>
                 )}
-                <p className="text-xs text-[#78716C] mt-2">
-                  Update phone number, WhatsApp number, and Instagram link in{' '}
-                  <code className="text-[#141312]">src/config/siteConfig.ts</code>
-                </p>
               </div>
 
               {/* Direct Action Buttons: WhatsApp & Instagram */}

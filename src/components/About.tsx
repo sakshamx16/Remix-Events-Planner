@@ -1,5 +1,6 @@
 import React from 'react';
 import { ResilientImage } from './ResilientImage';
+import { IMAGE_ASSETS } from '../config/siteConfig';
 
 const PILLARS = [
   {
@@ -86,7 +87,7 @@ export const About: React.FC = () => {
             <div className="relative bg-[#F3EFE6] p-4 sm:p-6 border border-[#141312]/10 rounded-sm">
               <div className="aspect-[3/4] overflow-hidden rounded-sm">
                 <ResilientImage
-                  src="/src/assets/images/gallery_floral_entrance_1791488829471.jpg"
+                  src={IMAGE_ASSETS.floralEntrance}
                   alt="Grand floral entrance archway with ivory roses and brass lanterns by Remix Events Planner"
                   containerClassName="w-full h-full"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]"

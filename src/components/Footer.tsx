@@ -4,7 +4,7 @@ import { SITE_CONFIG, getWhatsAppUrl } from '../config/siteConfig';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#121110] text-[#FAF8F5] pt-16 pb-12 border-t border-[#FAF8F5]/10">
+    <footer className="bg-[#121110] text-[#FAF8F5] pt-16 pb-24 sm:pb-28 border-t border-[#FAF8F5]/10">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#FAF8F5]/10 items-start">
           {/* Brand Column */}

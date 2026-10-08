@@ -39,11 +39,11 @@ export const Navbar: React.FC<NavbarProps> = () => {
           : 'bg-gradient-to-b from-[#121110]/85 to-transparent border-b border-[#FAF8F5]/10'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 h-20 flex items-center justify-between gap-4">
         {/* Zone 1: Single text element wordmark */}
         <a
           href="#home"
-          className="font-serif-display text-xl sm:text-2xl font-semibold tracking-[0.12em] text-[#FAF8F5] whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C9A66B]"
+          className="font-serif-display text-lg sm:text-xl lg:text-2xl font-semibold tracking-[0.08em] lg:tracking-[0.12em] text-[#FAF8F5] whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C9A66B]"
         >
           {SITE_CONFIG.businessName}
         </a>
@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
         {/* Zone 2: 5 clean text navigation links */}
         <nav
           aria-label="Primary Navigation"
-          className="hidden md:flex items-center gap-8 text-sm font-medium text-[#FAF8F5]/85"
+          className="hidden md:flex items-center gap-5 lg:gap-8 text-xs lg:text-sm font-medium text-[#FAF8F5]/85"
         >
           {NAV_LINKS.map((item) => (
             <a
@@ -65,10 +65,10 @@ export const Navbar: React.FC<NavbarProps> = () => {
         </nav>
 
         {/* Zone 3: 1 primary action + Mobile Hamburger */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 shrink-0">
           <a
             href="#contact"
-            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-medium tracking-wider text-[#121110] bg-[#C9A66B] hover:bg-[#d8b77e] rounded-sm transition-colors duration-150 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A66B]"
+            className="hidden sm:inline-flex items-center justify-center px-4 lg:px-5 py-2.5 text-xs font-medium tracking-wider text-[#121110] bg-[#C9A66B] hover:bg-[#d8b77e] rounded-sm transition-colors duration-150 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A66B]"
           >
             Plan Your Event
           </a>
