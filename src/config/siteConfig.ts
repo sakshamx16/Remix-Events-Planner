@@ -88,9 +88,9 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: 'bespoke-wedding-design',
     index: '03',
     title: 'Bespoke Wedding Design',
-    subtitle: 'Customized Concepts & Themes',
+    subtitle: 'Customised Concepts & Themes',
     description:
-      "Customized concepts, themes and décor designed around the couple's vision.",
+      "Customised concepts, themes and décor designed around the couple's vision.",
     highlights: ['Custom Concepts', 'Themes & Décor'],
     image: '/src/assets/images/gallery_mehndi_haldi_decor_1791488866434.jpg',
     iconName: 'palette',
@@ -159,7 +159,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: 'Mehndi & Haldi',
     location: 'Patna, Bihar',
     description:
-      'Customized floral installations and seating arrangements for daytime Mehndi and Haldi celebrations.',
+      'Customised floral installations and seating arrangements for daytime Mehndi and Haldi celebrations.',
     image: '/src/assets/images/gallery_mehndi_haldi_decor_1791488866434.jpg',
     aspectClass: 'aspect-[3/4]',
     gridSpanClass: 'md:col-span-5',

@@ -278,13 +278,13 @@ export const Contact: React.FC<ContactProps> = ({ preselectedEventType }) => {
                         htmlFor="contact-phone"
                         className="block text-xs font-medium tracking-wider uppercase text-[#141312] mb-2"
                       >
-                        Phone Number <span className="text-[#9E7B3B]">*</span>
+                        Mobile / Phone Number <span className="text-[#9E7B3B]">*</span>
                       </label>
                       <input
                         id="contact-phone"
                         type="tel"
                         required
-                        placeholder="Enter your phone number"
+                        placeholder="Enter your 10-digit mobile number"
                         value={formData.phone}
                         onChange={(e) => {
                           setFormData({ ...formData, phone: e.target.value });

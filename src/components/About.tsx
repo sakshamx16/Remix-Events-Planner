@@ -6,7 +6,7 @@ const PILLARS = [
     index: '01',
     title: 'Concept & Bespoke Design',
     detail:
-      "Customized concepts, themes, and spatial designs shaped around your vision for the celebration.",
+      "Customised concepts, themes, and spatial designs shaped around your vision for the celebration.",
   },
   {
     index: '02',
