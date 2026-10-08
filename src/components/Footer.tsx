@@ -72,8 +72,8 @@ export const Footer: React.FC = () => {
               <div className="flex flex-col space-y-2.5 text-sm text-[#FAF8F5]/75">
                 <a
                   href={SITE_CONFIG.contact.instagramUrl}
-                  target={SITE_CONFIG.contact.instagramUrl.startsWith('http') ? '_blank' : undefined}
-                  rel={SITE_CONFIG.contact.instagramUrl.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 hover:text-[#C9A66B] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[#C9A66B]" />

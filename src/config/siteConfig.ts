@@ -57,9 +57,9 @@ export const SITE_CONFIG = {
     // Display phone placeholder shown in the Contact section
     phoneDisplay: 'XXXXXXXXXX',
     phoneHref: '#contact',
-    // Replace with the official Instagram profile URL
-    instagramUrl: '#contact',
-    instagramHandle: '@remixeventsplanner',
+    // Official Instagram profile URL
+    instagramUrl: 'https://www.instagram.com/remix_eventplanner',
+    instagramHandle: '@remix_eventplanner',
   },
   whatsappDefaultMessage:
     "Hi Remix Events Planner, I'm interested in planning an event. I'd like to know more about your services.",

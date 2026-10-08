@@ -154,8 +154,8 @@ export const Contact: React.FC<ContactProps> = ({ preselectedEventType }) => {
 
                 <a
                   href={SITE_CONFIG.contact.instagramUrl}
-                  target={SITE_CONFIG.contact.instagramUrl.startsWith('http') ? '_blank' : undefined}
-                  rel={SITE_CONFIG.contact.instagramUrl.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 text-xs font-medium tracking-wider uppercase text-[#141312] border border-[#141312]/20 hover:border-[#9E7B3B] hover:text-[#9E7B3B] bg-[#FAF8F5] rounded-sm transition-colors whitespace-nowrap"
                 >
                   <Instagram className="w-4 h-4" />
