@@ -1,0 +1,6 @@
+{
+  "name": "Remix Events Planner | Wedding & Event Planner in Patna",
+  "description": "Luxury wedding planning, bespoke wedding décor, event coordination, catering, and entertainment services in Badi Khagaul, Patna, Bihar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
